@@ -41,28 +41,25 @@ class HostRSS {
       foreach ($this->rss->channel->item as $itemArray) {
          if ($itemArray->category == $this->TypeFeed) {
             array_push($this->ArrayFeed, Array(
-                           "category" => $itemArray->category,
-                           "guid" => $itemArray->guid,
-                           "title" => $itemArray->title,
+                           "category"    => $itemArray->category,
+                           "guid"        => $itemArray->guid,
+                           "title"       => $itemArray->title,
                            "description" => $itemArray->description));
          };
       }
    }
 
-   // Método ....
-   public function getElemArrayFeed($fieldName) {
-      //foreach ($this->ArrayFeed as $var) {
-      //   echo $var[$fieldName]."<br/><br/>";
-      return Array($this->ArrayFeed[$fieldName]);
-      //}
+
+   public function getArrayFeed() {
+      return array_values($this->ArrayFeed);
    }
 
    public function getArrayFeed2(){
       foreach ( $this->ArrayFeed as $var ) {
          echo $var['category']."<br/>".$var['title']."<br/>".$var['guid']."<br/>".$var['description']."<br/><br/><br/>";
       }
-      //return var_dump($this->ArrayFeed);
    }
+
 
 } // Fim da classe
 

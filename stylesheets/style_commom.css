@@ -1,0 +1,49 @@
+body {
+   margin:0 0 5px 0;
+   padding:0;
+   background-color:#444;
+}
+
+#geral {
+    /* width:960px;*/
+    width: 100%;
+    margin:0 auto;
+    background:#ddd;
+}
+
+#cabecalho {
+    padding:5px;
+    background-color: #006600;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 20pt;
+    font-weight: bold;
+    color: #98FB98;
+    text-align: center;
+}
+
+#conteudo-1 {
+    float:left;
+    width: 30%;
+}
+
+#conteudo-2-1 {
+    float:left;
+    padding:10px;
+    background:#ddf;
+}
+
+#conteudo-2 {
+    float:right;
+    width: 65%;
+}
+
+#conteudo-2-2 {
+    float:right;
+    width: 40%;
+}
+
+#rodape {
+    clear:both;
+    padding:10px;
+    background:#ff9;
+}
