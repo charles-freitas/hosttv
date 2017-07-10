@@ -1,0 +1,39 @@
+
+
+
+   <div id="geral">
+      <div id="cabecalho">
+        .:: MURAL DE NOTÍCIAS ::.
+        <div id="relogio"><span id="timer">00:00:00</span></div>
+      </div>
+      <div id="principal">
+         <div id="conteudo-1">
+            <br/>
+            <!-- =========================================================== -->
+            <!-- INÍCIO: Box com DESTAQUES -->
+            <?php //include("includes/inc_Box_Destaques.php") ?>
+            <!-- TÉRMINO: Box com os PORTARIAS -->
+            <!-- =========================================================== -->
+            <!-- =========================================================== -->
+            <!-- INÍCIO: Box com as NOTÍCIAS -->
+            <?php //include("includes/inc_Box_News.php") ?>
+            <!-- TÉRMINO: Box com as NOTÍCIAS -->
+            <!-- =========================================================== -->
+            <!-- =========================================================== -->
+            <!-- INÍCIO: Box com os EDITAIS -->
+            <?php //include("includes/inc_Box_Editais.php") ?>
+            <!-- TÉRMINO: Box com os EDITAIS -->
+            <!-- =========================================================== -->
+         </div> <!-- Fim da DIV:conteudo-1 -->
+         <div id="conteudo-2">
+           <br/>
+           <?php include("includes/inc_Box_Videos.php") ?>
+         </div> <!-- Fim da DIV:conteudo-2 -->
+      </div> <!-- Fim da DIV:principal -->
+      <div id="rodape">
+          Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Norte ©20176. Todos os direitos reservados.<br/>
+          Av. Senador Salgado Filho, 1559 - Tirol Natal / RN<br/>
+          CEP: 59015-000
+        </ul>
+      </div>
+   </div> <!-- Fim da DIV:geral -->

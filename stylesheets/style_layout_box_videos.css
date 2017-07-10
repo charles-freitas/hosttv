@@ -1,6 +1,7 @@
-.box_news {
+.box_videos {
+   float: right;
    display: block;
-   height: 180px;
+   height: 653px;
    /*width: 32%;*/
    width: 95%;
    margin-top: 10px;
@@ -13,25 +14,10 @@
    border-radius: 5px;
 }
 
-.box_news_title{
+.box_videos_title{
    font-family: Arial, Verdana, sans-serif;
    font-size: 16pt;
    font-weight: bold;
-   font-style: normal;
-   color: #004400;
-}
-
-.box_news_newstitle{
-   font-family: Arial, Verdana, sans-serif;
-   font-size: 11pt;
-   font-weight: bolder;
-   font-style: normal;
-   color: #004400;
-}
-
-.box_news_newstext{
-   font-family: Arial, Verdana, sans-serif;
-   font-size: 10pt;
    font-style: normal;
    color: #004400;
 }

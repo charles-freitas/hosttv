@@ -11,6 +11,8 @@
    <link type="text/css" rel="stylesheet" href="stylesheets/style_commom.css" />
    <link type="text/css" rel="stylesheet" href="stylesheets/style_layout_box_news.css" />
    <link type="text/css" rel="stylesheet" href="stylesheets/style_layout_box_editais.css" />
+   <link type="text/css" rel="stylesheet" href="stylesheets/style_layout_box_destaques.css" />
+   <link type="text/css" rel="stylesheet" href="stylesheets/style_layout_box_videos.css" />
 
    <!-- jQuery library (served from Google) -->
    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -25,40 +27,21 @@
    <!-- Variáveis do Sistema -->
    <?php require_once("definitions.php"); ?>
 
-   <script type="text/javascript">
-      $(document).ready(function(){
-         $('#slider1').bxSlider({
-            mode: 'fade',
-            auto: true,
-            autoControls: false,
-            pause: 10000, // texto para 10segundos
-            controls: false
-         });
+   <!-- Javascript do Relógio -->
+   <?php include("includes/inc_Relogio.js") ?>
 
-         $('#slider2').bxSlider({
-            mode: 'fade',
-            auto: true,
-            autoControls: false,
-            pause: 10000, // texto para 10segundos
-            controls: false
-         });
-
-         $('#slider3').bxSlider({
-            mode: 'fade',
-            auto: true,
-            autoControls: false,
-            pause: 10000, // texto para 10segundos
-            controls: false
-         });
-      });
-   </script>
+   <!-- Javascript de Rolagem de texto -->
+   <?php include("includes/inc_bxSlider.js") ?>
 </head>
 
-<body>
-   <?php $rssTV = new HostRSS($RSSURL); ?>
+<body onLoad="initTimer();">
+   <?php $rssTV = new HostRSS($_RSSURL); ?>
 
    <div id="geral">
-      <div id="cabecalho">.:: MURAL DE NOTÍCIAS ::.</div>
+      <div id="cabecalho">
+        .:: MURAL DE NOTÍCIAS ::.
+        <div id="relogio"><span id="timer">00:00:00</span></div>
+      </div>
       <div id="principal">
          <div id="conteudo-1">
             <br/>
@@ -67,27 +50,30 @@
             <?php include("includes/inc_Box_Destaques.php") ?>
             <!-- TÉRMINO: Box com os PORTARIAS -->
             <!-- =========================================================== -->
-            <br/>
+            <br/><br/>
             <!-- =========================================================== -->
             <!-- INÍCIO: Box com as NOTÍCIAS -->
             <?php include("includes/inc_Box_News.php") ?>
             <!-- TÉRMINO: Box com as NOTÍCIAS -->
             <!-- =========================================================== -->
-            <br/>
+            <br/><br/>
             <!-- =========================================================== -->
             <!-- INÍCIO: Box com os EDITAIS -->
             <?php include("includes/inc_Box_Editais.php") ?>
             <!-- TÉRMINO: Box com os EDITAIS -->
             <!-- =========================================================== -->
          </div> <!-- Fim da DIV:conteudo-1 -->
-         <div id="conteudo-2">tste
-            <!--
-            <div id="conteudo-2-1">teste</div>
-            <div id="conteudo-2-2"></div>
-         -->
+         <div id="conteudo-2">
+           <br/>
+           <?php include("includes/inc_Box_Videos.php") ?>
          </div> <!-- Fim da DIV:conteudo-2 -->
       </div> <!-- Fim da DIV:principal -->
-      <div id="rodape"></div>
+      <div id="rodape">
+          Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Norte ©20176. Todos os direitos reservados.<br/>
+          Av. Senador Salgado Filho, 1559 - Tirol Natal / RN<br/>
+          CEP: 59015-000
+        </ul>
+      </div>
    </div> <!-- Fim da DIV:geral -->
 
    <?php $rssTV = NULL; ?>

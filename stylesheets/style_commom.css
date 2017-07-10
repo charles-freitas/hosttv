@@ -1,49 +1,58 @@
 body {
-   margin:0 0 5px 0;
-   padding:0;
-   background-color:#444;
+   margin:0 0 0 0;
+   padding:0 0 0 0;
+   background-color: #666666;
 }
 
-#geral {
-    /* width:960px;*/
-    width: 100%;
-    margin:0 auto;
-    background:#ddd;
+.cabecalho {
+   height:10%;
+   background-color: #006600;
+   font-family: Verdana, Arial, sans-serif;
+   font-size: 20pt;
+   font-weight: bold;
+   color: #98FB98;
+   text-align: center;
+
 }
 
-#cabecalho {
-    padding:5px;
-    background-color: #006600;
-    font-family: Verdana, Arial, sans-serif;
-    font-size: 20pt;
-    font-weight: bold;
-    color: #98FB98;
-    text-align: center;
+.conteudo {
+   height:80%;
 }
 
-#conteudo-1 {
-    float:left;
-    width: 30%;
+.rodape {
+   height:10%;
+   background-color: #006600;
+   font-family: Verdana, Arial, sans-serif;
+   font-size: 10pt;
+   color: #ffffff;
+   text-align: center;
 }
 
-#conteudo-2-1 {
-    float:left;
-    padding:10px;
-    background:#ddf;
+.relogio {
+   background-color: #006600;
+   font-family: Verdana, Arial, sans-serif;
+   font-size: 14pt;
+   color: #ffffff;
 }
 
-#conteudo-2 {
-    float:right;
-    width: 65%;
+.logo_ifrn {
+   background-color: #006600;
+   font-family: Verdana, Arial, sans-serif;
+   font-size: 14pt;
+   color: #ffffff;
 }
 
-#conteudo-2-2 {
-    float:right;
-    width: 40%;
+#slider1 {
+   padding-left: 0px;
+   padding-top: 0px;
 }
 
-#rodape {
-    clear:both;
-    padding:10px;
-    background:#ff9;
+#slider2 {
+   padding-left: 0px;
+   padding-top: 0px;
+}
+
+#slider3 {
+   padding-left: 0px;
+   padding-top: 0px;
 }
