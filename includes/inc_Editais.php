@@ -16,12 +16,12 @@
          $partText = explode("–", $var['title']);
 
          if (empty($partText[1]))  {
-            echo "<span class=\"box_editais_title_editais\">...".
-            "</span><br/><span class=\"box_editais_text_editais\">".
+            echo "<span class=\"titulo_editais\"><br/>...".
+            "</span><br/><br/><span class=\"corpo_editais\">".
             $partText[0]."</span>";
          } else {
-            echo "<span class=\"box_editais_title_editais\">".$partText[0].
-            "</span><br/><span class=\"box_editais_text_editais\">".
+            echo "<span class=\"titulo_editais\"><br/>".$partText[0].
+            "</span><br/><br/><span class=\"corpo_editais\">".
             $partText[1]."</span>";
          }
          echo "</li> \n";

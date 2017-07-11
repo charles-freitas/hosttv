@@ -1,6 +1,6 @@
-<ul id="slider3">
+<ul id="slider1">
    <?php
-      // Montando o array de PORTARIAS
+      // Montando o array de NOTÍCIAS
       $rssTV->setArrayFeed();
 
       // Montando a lista de notícias
@@ -16,12 +16,12 @@
          $partText = explode("–", $var['title']);
 
          if (empty($partText[1]))  {
-            echo "<span class=\"box_destaques_title_destaques\">...".
-            "</span><br/><span class=\"box_destaques_text_destaques\">".
+            echo "<span class=\"titulo_noticias\"><br/>...".
+            "</span><br/><br/><span class=\"corpo_noticias\">".
             $partText[0]."</span>";
          } else {
-            echo "<span class=\"box_destaques_title_destaques\">".$partText[0].
-            "</span><br/><span class=\"box_destaques_text_destaques\">".
+            echo "<span class=\"titulo_noticias\"><br/>".$partText[0].
+            "</span><br/><br/><span class=\"corpo_noticias\">".
             $partText[1]."</span>";
          }
          echo "</li> \n";

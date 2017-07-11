@@ -1,47 +1,94 @@
+/* Formatação de tags */
 body {
    margin:0 0 0 0;
    padding:0 0 0 0;
-   background-color: #666666;
-}
-
-.cabecalho {
-   height:10%;
-   background-color: #006600;
    font-family: Verdana, Arial, sans-serif;
-   font-size: 20pt;
+   background-color: #FFFFFF;
+}
+/* -------------------------------------------------------------------------- */
+
+/* Formatação da Área do CABEÇALHO */
+.cabecalho {
+   height:5%;
+   background-color: #006600;
+   background-image: "../images/img_cabecalho.png";
+   font-size: 2em;
    font-weight: bold;
    color: #98FB98;
-   text-align: center;
-
-}
-
-.conteudo {
-   height:80%;
-}
-
-.rodape {
-   height:10%;
-   background-color: #006600;
-   font-family: Verdana, Arial, sans-serif;
-   font-size: 10pt;
-   color: #ffffff;
    text-align: center;
 }
 
 .relogio {
    background-color: #006600;
-   font-family: Verdana, Arial, sans-serif;
-   font-size: 14pt;
-   color: #ffffff;
+   font-size: 0.6em;
+   color: #FFFFFF;
 }
 
 .logo_ifrn {
    background-color: #006600;
-   font-family: Verdana, Arial, sans-serif;
-   font-size: 14pt;
-   color: #ffffff;
+   font-size: 0.6em;
+   color: #FFFFFF;
+}
+/* -------------------------------------------------------------------------- */
+
+/* Formatação da Área de CONTEÚDO */
+.conteudo {
+   height:88%;
+   background-color: #DCDCDC;
 }
 
+.painel_noticias, .painel_editais, .painel_videos {
+   display: block;
+   height: 180px;
+   width: 95%;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   margin-left: 10px;
+   margin-right: 10px;
+   padding-left: 10px;
+   padding-right: 10px;
+}
+
+.titulo_painel_editais, .titulo_painel_noticias, .titulo_painel_videos {
+   font-size: 1.5em;
+   font-weight: bold;
+}
+
+.titulo_noticias {
+   font-size: 1.3em;
+   font-weight: bold;
+   color: #004400;
+}
+
+.corpo_noticias {
+   font-size:1.1em;
+   color: #004400;
+}
+
+.titulo_editais {
+   font-size: 1.3em;
+   font-weight: bold;
+   color: #8B0000;
+}
+
+.corpo_editais {
+   font-size: 1.1em;
+   color: #8B0000;
+}
+/* -------------------------------------------------------------------------- */
+
+/* Formatação da Área do RODAPÉ */
+.rodape {
+   height:7%;
+   background-color: #006600;
+   font-family: Verdana, Arial, sans-serif;
+   font-size: 1em;
+   color: #FFFFFF;
+   text-align: center;
+}
+/* -------------------------------------------------------------------------- */
+
+/* Formatação da área de Rolagem de Texto */
 #slider1 {
    padding-left: 0px;
    padding-top: 0px;
@@ -56,3 +103,4 @@ body {
    padding-left: 0px;
    padding-top: 0px;
 }
+/* -------------------------------------------------------------------------- */
