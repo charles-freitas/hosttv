@@ -5,8 +5,8 @@ function showTimer() {
 
    // Obtendo a Data
    var dia = time.getDate();
-   var mes = time.getMonth();
-   var ano = time.getYear();
+   var mes = time.getMonth()+1;
+   var ano = time.getYear()+1900;
 
    //Obtendo a Hora
    var hora    = time.getHours();

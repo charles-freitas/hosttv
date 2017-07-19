@@ -1,9 +1,13 @@
+<?php
+   $rssTV->setTypeFeed("Notícias");
+?>
+
 <ul id="slider1">
    <?php
-      // Montando o array de NOTÍCIAS
+      // Montando o array
       $rssTV->setArrayFeed();
 
-      // Montando a lista de notícias
+      // Montando a lista
       foreach ($rssTV->getArrayFeed() as $var) {
          //Montando o qrCode apartir do link (usando API do Google)
          $qrcode = $_QRCODEURLBASE.$var['guid']."&chs=".$_QRCODESIZE."x".
@@ -16,13 +20,13 @@
          $partText = explode("–", $var['title']);
 
          if (empty($partText[1]))  {
-            echo "<span class=\"titulo_noticias\"><br/>...".
-            "</span><br/><br/><span class=\"corpo_noticias\">".
-            $partText[0]."</span>";
+            echo "<p class=\"titulo_slider titulo_noticias\">...</p>".
+            "<p class=\"corpo_slider corpo_noticias\">".$partText[0].
+            "<br/><br/></p>";
          } else {
-            echo "<span class=\"titulo_noticias\"><br/>".$partText[0].
-            "</span><br/><br/><span class=\"corpo_noticias\">".
-            $partText[1]."</span>";
+            echo "<p class=\"titulo_slider titulo_noticias\">".
+            $partText[0]."</p><p class=\"corpo_slider corpo_noticias\">".
+            $partText[1]."<br/><br/></p>";
          }
          echo "</li> \n";
       }

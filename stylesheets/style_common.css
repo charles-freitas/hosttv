@@ -1,0 +1,44 @@
+.titulo_slider {
+   font-family: verdana;
+   font-size: 1.5em;
+   font-weight: bold;
+   margin:0.5em;
+}
+
+.corpo_slider {
+   font-family: verdana;
+   font-size:1.2em;
+}
+
+.titulo_noticias {
+   color: #440000;
+}
+
+.titulo_editais {
+   color: #008B00;
+}
+
+.titulo_portarias {
+   color: #00008B;
+}
+
+.corpo_noticias {
+   color: #440000;
+}
+
+.corpo_editais {
+   color: #008B00;
+}
+
+.corpo_portarias {
+   color: #00008B;
+}
+/* -------------------------------------------------------------------------- */
+
+
+/* Formatação da área de Rolagem de Texto */
+#slider1, #slider2, #slider3 {
+   padding-left: 0px;
+   padding-top: 0px;
+}
+/* -------------------------------------------------------------------------- */
